@@ -1,0 +1,4 @@
+#!/bin/bash
+
+g++ -std=c++17 -c convex_hull.cpp Point.cpp -ISFML-2.5.0/include
+g++ -std=c++17 convex_hull.o Point.o -o prog -LSFML-2.5.0/lib -lsfml-graphics -lsfml-window -lsfml-system
